@@ -14,7 +14,7 @@ const NavbarTabs = () => {
   };
 
   return (
-    <div className="hidden lg:flex gap-6 items-center">
+    <div className="hidden lg:flex gap-4 items-center">
       {navbarLinks.map((link) => (
         <Link
           href={link.href}

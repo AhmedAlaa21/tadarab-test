@@ -1,11 +1,11 @@
 import Image from "next/image";
-import NavbarTabs from "./Navbar/NavbarTabs";
+import NavbarTabs from "./NavbarTabs";
 import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header className="sticky top-0 z-50 bg-white">
-      <div className="p-1 mx-auto flex justify-between gap-12 max-w-[1290px] items-center">
+    <header className="sticky top-0 z-50 bg-white shadow-sm">
+      <div className="mx-auto flex justify-between gap-12 max-w-[1290px] items-center">
         {/* Logo */}
         <div className="flex gap-2 items-center">
           <Image
