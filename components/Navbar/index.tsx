@@ -5,7 +5,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
-      <div className="mx-auto flex justify-between gap-12 max-w-[1290px] items-center">
+      <div className="sm:mx-auto flex flex-col pb-5 sm:pb-0 sm:flex-row justify-between sm:gap-12 sm:max-w-[1290px] items-center">
         {/* Logo */}
         <div className="flex gap-2 items-center">
           <Image
@@ -26,23 +26,23 @@ const Navbar = () => {
         <NavbarTabs />
         {/* Profile & Settings */}
         <div className="flex gap-6 items-center">
-          <div className=" flex gap-2 py-2 px-3  rounded-full bg-lightYellow">
+          <div className="flex gap-2 py-2 px-3 rounded-full bg-lightYellow">
             <Image
               src={"/assets/images/star-solid.svg"}
               width={20}
               height={20}
               alt="star solid with yellow color"
             />
-            <span className="text-black font-bold">218</span>
+            <span className="text-black font-extrabold">218</span>
           </div>
-          <div className=" flex gap-2 py-2 px-3 rounded-full bg-[#F3F3F3]">
+          <div className="flex gap-2 py-2 px-3 rounded-full bg-[#F3F3F3]">
             <Image
               src={"/assets/images/language.svg"}
               width={20}
               height={20}
               alt="international language"
             />
-            <span className="text-black font-bold">EN</span>
+            <span className="text-black font-extrabold">EN</span>
           </div>
           <div className="relative">
             <Link href={"#"}>
@@ -52,7 +52,7 @@ const Navbar = () => {
                 height={20}
                 alt="messages"
               />
-              <span className="absolute z-10 -top-[4.3rem] -right-[2px]  text-red text-[4.3rem]">
+              <span className="absolute z-10 -top-[4.75rem] -right-[2px] text-red text-[4.3rem]">
                 .
               </span>
             </Link>
@@ -65,12 +65,12 @@ const Navbar = () => {
                 height={20}
                 alt="notifications"
               />
-              <span className="absolute z-10 -top-[4.3rem] -right-[2px]  text-red text-[4.3rem]">
+              <span className="absolute z-10 -top-[4.75rem] -right-[2px] text-red text-[4.3rem]">
                 .
               </span>
             </Link>
           </div>
-          <div className=" flex items-center gap-4">
+          <div className="flex items-center gap-4">
             <div className="rounded-full overflow-hidden">
               <Image
                 src={"/assets/images/user-solid.jpg"}
