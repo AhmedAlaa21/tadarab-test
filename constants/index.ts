@@ -30,3 +30,30 @@ export const navbarLinks = [
     href: "/",
   },
 ];
+
+export const profilePopup = [
+  {
+    id: 0,
+    src: "/assets/images/profile.svg",
+    title: "تعديل حسابي الشخصي",
+    href: "#",
+  },
+  {
+    id: 1,
+    src: "/assets/images/profile.svg",
+    title: "تعديل حسابي الشخصي",
+    href: "#",
+  },
+  {
+    id: 2,
+    src: "/assets/images/profile.svg",
+    title: "تعديل حسابي الشخصي",
+    href: "#",
+  },
+  {
+    id: 3,
+    src: "/assets/images/profile.svg",
+    title: "تعديل حسابي الشخصي",
+    href: "#",
+  },
+];

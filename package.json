@@ -13,12 +13,14 @@
     "framer-motion": "^10.16.4",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-vertical-timeline-component": "^3.6.0"
   },
   "devDependencies": {
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@types/react-vertical-timeline-component": "^3.3.4",
     "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",

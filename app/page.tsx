@@ -63,15 +63,12 @@ export default function Home() {
               opacity: 0,
             }}
           >
-            {/* Breadcrumb */}
             <Breadcrumb />
-            {/* Hero */}
             <Hero
               title={developmentPaths.title}
               image={developmentPaths.image}
               courses={developmentPaths.courses}
             />
-            {/* Path Info */}
             <PathInfo
               learning_outcomes={developmentPaths.learning_outcomes}
               description={developmentPaths.description}

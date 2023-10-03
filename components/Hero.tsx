@@ -16,7 +16,8 @@ const Hero: React.FC<HeroProps> = ({ title, image, courses }) => {
     return totalSeconds;
   };
 
-  const pathTime = formatTime(sumOfSeconds());
+  const { arabicHours, arabicMinutes } = formatTime(sumOfSeconds());
+
   return (
     <div
       className="relative bg-transparent rounded-2xl shadow bg-cover 
@@ -48,7 +49,11 @@ const Hero: React.FC<HeroProps> = ({ title, image, courses }) => {
               width={16}
               height={16}
             />
-            <p className="text-base font-normal tracking-wider">{pathTime}</p>
+            <p className="text-base font-bold tracking-wider">
+              {`${arabicHours}`} <span className="font-normal">س</span> :{" "}
+              {`${arabicMinutes}`}
+              <span className="font-normal">د</span>
+            </p>
           </div>
         </div>
       </div>
