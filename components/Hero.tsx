@@ -33,16 +33,18 @@ const Hero: React.FC<HeroProps> = ({ title, image, courses }) => {
           <p className=" text-3xl text-bold font-bold">{title}</p>
         </div>
         <div className="flex gap-4 items-center">
-          <div className="flex gap-4">
+          <div className="flex gap-1">
             <Image
               src={"/assets/images/lessons.svg"}
               alt="lessons"
               width={16}
               height={16}
             />
-            <span>{courses.length} دورات تدريبية</span>
+            <span className="text-base font-bold tracking-tight">
+              {courses.length} دورات تدريبية
+            </span>
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-1">
             <Image
               src={"/assets/images/time.svg"}
               alt="lessons"
@@ -50,8 +52,8 @@ const Hero: React.FC<HeroProps> = ({ title, image, courses }) => {
               height={16}
             />
             <p className="text-base font-bold tracking-wider">
-              {`${arabicHours}`} <span className="font-normal">س</span> :{" "}
-              {`${arabicMinutes}`}
+              {`${arabicHours}`}
+              <span className="font-normal">س</span> :{`${arabicMinutes}`}
               <span className="font-normal">د</span>
             </p>
           </div>
