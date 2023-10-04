@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tadarab
 
-## Getting Started
+Tadarab development paths page.
 
-First, run the development server:
+## Live Demo
+[Tadarab](https://tadarab-test.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Nextjs v- 13.5.4 (latest)
+- React - React Hooks
+- Responsive using Tailwind css
+- Axios for fetching data.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Captures
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![1](https://github.com/AhmedAlaa21/DeFi/assets/92605303/d7f115ba-9bf8-4f5e-9a91-ca99f60f7675)
+![2](https://github.com/AhmedAlaa21/DeFi/assets/92605303/3ca1a3e6-96f4-4121-acbf-2dae34621c31)
+![3](https://github.com/AhmedAlaa21/DeFi/assets/92605303/ee4685f2-85a7-4b2d-ae47-a5ed4b8f12bb)
+![4](https://github.com/AhmedAlaa21/DeFi/assets/92605303/d3f18e5d-07c4-46ba-94db-bb662ac298e0)
+![5](https://github.com/AhmedAlaa21/DeFi/assets/92605303/082c094e-ddc5-492b-b09c-780fcf502b66)
+![6](https://github.com/AhmedAlaa21/DeFi/assets/92605303/e35527e4-7b1c-4f12-8a78-a198c77326e3)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
