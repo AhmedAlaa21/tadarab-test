@@ -80,11 +80,11 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
         lg:flex-row lg:gap-0 lg:justify-between w-full lg:max-w-6xl"
     >
       <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-        <div className="relative rounded-lg w-[300px] h-[120px] overflow-hidden aspect-video">
+        <div className="relative rounded-md w-[300px] md:w-[180px] h-[120px] overflow-hidden aspect-video">
           <Image
             src={image}
             fill
-            className="rounded-lg object-cover h-full w-full"
+            className="rounded-md object-cover h-full w-full"
             alt={title}
           />
         </div>
@@ -107,7 +107,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
             <Progress progress={progress_percentage} />
             <p className="text-base text-normalGray">{progress_percentage}%</p>
           </div>
-          <div className="flex justify-between items-center max-w-[280px]">
+          <div className="flex justify-between gap-[6px] items-center max-w-[290px]">
             <div className="flex gap-2 items-center">
               <Image
                 src={trainer_image}

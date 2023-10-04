@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import PopupItem from "./PopupItem";
+import { motion } from "framer-motion";
 
 const ProfilePopup = () => {
   const [showMenu, setShowMenu] = useState(false);

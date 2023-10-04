@@ -9,13 +9,13 @@ export const navbarLinks = [
     id: 1,
     title: "مسارتي",
     src: "/assets/images/Paths.svg",
-    href: "/",
+    href: "/development-path",
   },
   {
     id: 2,
     title: "دوراتي",
     src: "/assets/images/myCourses.svg",
-    href: "/",
+    href: "#",
   },
   {
     id: 3,

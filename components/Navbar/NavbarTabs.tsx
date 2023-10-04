@@ -1,10 +1,11 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { navbarLinks } from "@/constants";
-import Image from "next/image";
-import Link from "next/link";
+import { motion } from "framer-motion";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { RiMenu3Line } from "react-icons/ri";
+import Image from "next/image";
+import Link from "next/link";
 
 const NavbarTabs = () => {
   const [selectedTab, setSelectedTab] = useState(1);
@@ -48,6 +49,7 @@ const NavbarTabs = () => {
             href={link.href}
             key={link.id}
             className={`flex gap-2 items-center p-4 rounded-lg
+            hover:bg-lightRed hover:bg-opacity-20 hover:text-red
               ${
                 selectedTab === link.id
                   ? "text-red bg-lightRed bg-opacity-20"
@@ -62,7 +64,9 @@ const NavbarTabs = () => {
         ))}
       </div>
       {showMenu && (
-        <div
+        <motion.div
+          initial={{ x: "100%" }}
+          animate={{ x: 0 }}
           className="flex items-start justify-between p-2 absolute top-20
            right-0 z-[99] w-[300px] h-auto bg-white shadow-xl rounded-lg"
         >
@@ -91,7 +95,7 @@ const NavbarTabs = () => {
           >
             <AiFillCloseCircle size={32} onClick={toggleMenu} color="#C15258" />
           </div>
-        </div>
+        </motion.div>
       )}
     </div>
   );

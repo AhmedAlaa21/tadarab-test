@@ -31,7 +31,7 @@ const ProfileAndSettings = () => {
             height={20}
             alt="messages"
           />
-          <span className="absolute z-10 -top-[4.75rem] -right-[2px] text-red text-[4.3rem]">
+          <span className="absolute z-10 -top-[4.35rem] -right-[2px] text-red text-[4.3rem]">
             .
           </span>
         </Link>
@@ -44,7 +44,7 @@ const ProfileAndSettings = () => {
             height={20}
             alt="notifications"
           />
-          <span className="absolute z-10 -top-[4.75rem] -right-[2px] text-red text-[4.3rem]">
+          <span className="absolute z-10 -top-[4.35rem] -right-[2px] text-red text-[4.3rem]">
             .
           </span>
         </Link>
