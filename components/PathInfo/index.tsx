@@ -2,6 +2,7 @@ import LearningOutcomes from "./LearningOutcomes";
 import Description from "./Description";
 import Skills from "./Skills";
 import Courses from "./Courses";
+import Timeline from "./Timeline";
 
 interface PathInfoProps {
   learning_outcomes: string[];
@@ -26,13 +27,9 @@ const PathInfo: React.FC<PathInfoProps> = ({
       <Horizontal />
       <Description description={description} />
       <Horizontal />
-      <div className="flex flex-col gap-4">
-        <Skills skills={skills} />
-        <Horizontal />
-        <div className="flex flex-col gap-4">
-          <Courses courses={courses} />
-        </div>
-      </div>
+      <Skills skills={skills} />
+      <Horizontal />
+      <Courses courses={courses} />
     </div>
   );
 };

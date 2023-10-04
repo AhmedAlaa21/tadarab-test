@@ -14,8 +14,7 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-icons": "^4.11.0",
-    "react-vertical-timeline-component": "^3.6.0"
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
     "@types/node": "latest",
