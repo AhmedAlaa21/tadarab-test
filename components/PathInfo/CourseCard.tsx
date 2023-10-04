@@ -76,8 +76,13 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
 
   return (
     <div
-      className="bg-white shadow rounded-lg p-5 flex flex-col gap-6 items-center
-        md:flex-row lg:gap-0 md:justify-between w-full lg:max-w-6xl md:max-w-4xl"
+      className={`bg-white shadow rounded-lg p-5 flex flex-col gap-6 items-center
+        md:flex-row lg:gap-0 md:justify-between w-full lg:max-w-6xl md:max-w-4xl
+        ${
+          progress_percentage === 0
+            ? "cursor-not-allowed bg-[#222222] bg-opacity-[2%]"
+            : "cursor-pointer hover:bg-gray-300 hover:bg-opacity-5"
+        }`}
     >
       <div className=" w-full md:max-w-lg lg:w-auto flex flex-col md:flex-row items-center gap-4 md:gap-6">
         <div className="relative rounded-md w-[300px] md:w-[180px] h-[120px] overflow-hidden aspect-video">
