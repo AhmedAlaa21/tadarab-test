@@ -17,7 +17,7 @@ const Timeline: React.FC<TimelineProps> = ({ courses }) => {
           <div
             className={`rounded-full w-10 h-10 flex items-center justify-center ${
               course.progress_percentage === 100
-                ? "bg-green"
+                ? "bg-[#02C39A] border-[#02C39A]"
                 : "bg-black bg-opacity-10"
             }`}
           >
