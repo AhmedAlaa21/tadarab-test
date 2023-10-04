@@ -10,7 +10,7 @@ const ProfilePopup = () => {
   const popupRef = useRef<HTMLDivElement>(null);
 
   const toggleMenu = () => {
-    setShowMenu(!showMenu);
+    setShowMenu((prev) => !prev);
   };
 
   useEffect(() => {
@@ -33,6 +33,11 @@ const ProfilePopup = () => {
   const listStyle =
     "py-2 flex flex-col border-b gap-4 pb-4 border-gray-200 w-full";
 
+  const popupVariants = {
+    hidden: { y: 50, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
+  };
+
   return (
     <div
       className="relative cursor-pointer flex items-center gap-4"
@@ -47,10 +52,14 @@ const ProfilePopup = () => {
         />
       </div>
       {showMenu && (
-        <div
+        <motion.div
           className="absolute top-11 left-0 ml-6 mt-12 w-[300px]
            h-auto bg-white rounded-md shadow-md"
           ref={popupRef}
+          initial="hidden"
+          animate="visible"
+          variants={popupVariants}
+          transition={{ duration: 0.3 }}
         >
           <ul className="list-none px-8 pb-4 flex flex-col items-start justify-center gap-4 w-full">
             <li className="py-2 flex flex-col border-b pb-4 border-gray-200 w-full">
@@ -95,8 +104,11 @@ const ProfilePopup = () => {
             </li>
           </ul>
           {/* Arrow */}
-          <div className="absolute top-[-8px] left-4 -translate-x-1/3 w-4 h-4 bg-white transform rotate-45" />
-        </div>
+          <div
+            className="absolute top-[-8px] left-4 -translate-x-1/3 w-4
+           h-4 bg-white transform rotate-45"
+          />
+        </motion.div>
       )}
       <div>
         <Image

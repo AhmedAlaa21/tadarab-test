@@ -39,7 +39,7 @@ const DevelopmentPath = () => {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative sm:max-w-6xl sm:mx-auto h-auto gap-4 w-full">
       <Breadcrumb />
       {loading ? (
         <div className="text-green text-3xl font-bold flex items-center justify-center self-center h-72">
@@ -47,7 +47,7 @@ const DevelopmentPath = () => {
         </div>
       ) : (
         <motion.div
-          className="mt-12 sm:p-8 p-4 flex flex-col sm:max-w-6xl sm:mx-auto h-auto gap-4 w-full"
+          className="mt-12 sm:p-8 p-4 flex flex-col w-full h-auto"
           animate={{
             x: 0,
             opacity: 1,

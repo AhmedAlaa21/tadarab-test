@@ -14,7 +14,6 @@ const NavbarTabs = () => {
 
   const handleTabClick = (index: number) => {
     setSelectedTab(index);
-    console.log(selectedTab);
   };
 
   const toggleMenu = () => {
