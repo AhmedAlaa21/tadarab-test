@@ -77,9 +77,9 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
   return (
     <div
       className="bg-white shadow rounded-lg p-5 flex flex-col gap-6 items-center
-        lg:flex-row lg:gap-0 lg:justify-between w-full lg:max-w-6xl"
+        md:flex-row lg:gap-0 md:justify-between w-full lg:max-w-6xl"
     >
-      <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+      <div className=" w-full lg:w-auto flex flex-col md:flex-row items-center gap-4 md:gap-6">
         <div className="relative rounded-md w-[300px] md:w-[180px] h-[120px] overflow-hidden aspect-video">
           <Image
             src={image}

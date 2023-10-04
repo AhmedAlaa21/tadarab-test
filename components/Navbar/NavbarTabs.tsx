@@ -67,6 +67,7 @@ const NavbarTabs = () => {
         <motion.div
           initial={{ x: "100%" }}
           animate={{ x: 0 }}
+          ref={popupRef}
           className="flex items-start justify-between p-2 absolute top-20
            right-0 z-[99] w-[300px] h-auto bg-white shadow-xl rounded-lg"
         >

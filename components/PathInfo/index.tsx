@@ -17,9 +17,7 @@ const PathInfo: React.FC<PathInfoProps> = ({
   skills,
   courses,
 }) => {
-  const Horizontal = () => (
-    <div className="h-px max-w-4xl w-[40px] sm:w-full bg-gray-300" />
-  );
+  const Horizontal = () => <div className="h-px w-full bg-gray-300" />;
 
   return (
     <div className="flex flex-col gap-6 mt-5">
