@@ -39,7 +39,7 @@ const NavbarTabs = () => {
 
   return (
     <div className="flex items-start">
-      <div className="mr-4 lg:hidden">
+      <div className="mr-4 cursor-pointer lg:hidden">
         <RiMenu3Line size={32} onClick={toggleMenu} />
       </div>
       <div className={`hidden lg:flex lg:gap-4`}>
@@ -90,10 +90,10 @@ const NavbarTabs = () => {
             ))}
           </div>
           <div
-            className="transition w-10 h-10 flex items-center justify-center
+            className="transition w-12 h-12 flex items-center justify-center
         rounded-full cursor-pointer bg-transparent"
           >
-            <AiFillCloseCircle size={32} onClick={toggleMenu} color="#C15258" />
+            <AiFillCloseCircle size={40} onClick={toggleMenu} color="#C15258" />
           </div>
         </motion.div>
       )}

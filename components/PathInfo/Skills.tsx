@@ -10,7 +10,7 @@ const Skills: React.FC<SkillProps> = ({ skills }) => {
       <div className="flex flex-wrap gap-4">
         {skills.map((skill) => (
           <span
-            className="bg-black bg-opacity-5 text-darkGray 
+            className="cursor-pointer bg-black bg-opacity-5 text-darkGray 
               p-3 rounded-lg font-bold text-sm"
             key={skill}
           >

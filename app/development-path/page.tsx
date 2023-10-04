@@ -47,7 +47,7 @@ const DevelopmentPath = () => {
         </div>
       ) : (
         <motion.div
-          className="mt-12 sm:p-8 p-4 flex flex-col w-full h-auto"
+          className="mt-14 sm:p-8 p-4 flex flex-col w-full h-auto"
           animate={{
             x: 0,
             opacity: 1,

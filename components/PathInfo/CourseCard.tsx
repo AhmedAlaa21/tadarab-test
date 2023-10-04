@@ -81,7 +81,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
         ${
           progress_percentage === 0
             ? "cursor-not-allowed bg-[#222222] bg-opacity-[2%]"
-            : "cursor-pointer hover:bg-gray-300 hover:bg-opacity-5"
+            : "cursor-pointer transition hover:bg-gray-300 hover:bg-opacity-5"
         }`}
     >
       <div className=" w-full md:max-w-lg lg:w-auto flex flex-col md:flex-row items-center gap-4 md:gap-6">
