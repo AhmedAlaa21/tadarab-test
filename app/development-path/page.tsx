@@ -39,14 +39,15 @@ const DevelopmentPath = () => {
   }, []);
 
   return (
-    <>
+    <div className="relative">
+      <Breadcrumb />
       {loading ? (
         <div className="text-green text-3xl font-bold flex items-center justify-center self-center h-72">
-          يتم تحميل البيانات .. برجاء الانتظار
+          {"يتم تحميل البيانات ..  برجاء الانتظار"}
         </div>
       ) : (
         <motion.div
-          className="sm:p-8 p-4 flex flex-col sm:max-w-6xl sm:mx-auto h-auto gap-4 w-full"
+          className="mt-12 sm:p-8 p-4 flex flex-col sm:max-w-6xl sm:mx-auto h-auto gap-4 w-full"
           animate={{
             x: 0,
             opacity: 1,
@@ -60,7 +61,6 @@ const DevelopmentPath = () => {
             opacity: 0,
           }}
         >
-          <Breadcrumb />
           <Hero
             title={developmentPaths.title}
             image={developmentPaths.image}
@@ -74,7 +74,7 @@ const DevelopmentPath = () => {
           />
         </motion.div>
       )}
-    </>
+    </div>
   );
 };
 

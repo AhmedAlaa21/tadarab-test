@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const NavbarTabs = () => {
-  const [selectedTab, setSelectedTab] = useState(1);
+  const [selectedTab, setSelectedTab] = useState(0);
   const [showMenu, setShowMenu] = useState(false);
   const popupRef = useRef<HTMLDivElement>(null);
 
