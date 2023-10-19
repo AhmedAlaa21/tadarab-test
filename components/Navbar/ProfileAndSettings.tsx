@@ -6,7 +6,7 @@ const ProfileAndSettings = () => {
   return (
     <div className="flex gap-x-6 items-center">
       <div
-        className="cursor-pointer flex gap-2 py-2 px-3 rounded-full bg-lightYellow"
+        className="cursor-pointer flex items-center gap-x-2 py-2 px-3 rounded-full bg-lightYellow"
         title="نقاطك"
       >
         <Image
@@ -15,10 +15,10 @@ const ProfileAndSettings = () => {
           height={20}
           alt="star solid with yellow color"
         />
-        <span className="text-black font-extrabold">218</span>
+        <span className="text-black text-heading font-extrabold">218</span>
       </div>
       <div
-        className="cursor-pointer flex gap-2 py-2 px-3 rounded-full bg-[#F3F3F3]"
+        className="cursor-pointer flex items-center gap-2 py-2 px-3 rounded-full bg-[#F3F3F3]"
         title="غير لغتك"
       >
         <Image
@@ -27,7 +27,7 @@ const ProfileAndSettings = () => {
           height={20}
           alt="international language"
         />
-        <span className="text-black font-extrabold">EN</span>
+        <span className="text-black text-sm font-extrabold">EN</span>
       </div>
       <div className="relative">
         <Link href={"#"} title="messages">

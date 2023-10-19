@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     "منصة تدرب هي أكبر مكتبة دورات تدريبية أونلاين في الوطن العربي تضم أكثر من 850 وتقدم الكثير من الدورات المجانية  تضم منصة تدرب أكبر الخبراء في الوطن العربي في كل ا",
   icons: {
-    icon: "assets/images/TLogo.png",
+    icon: "/assets/images/TLogo@3x.png",
   },
 };
 
