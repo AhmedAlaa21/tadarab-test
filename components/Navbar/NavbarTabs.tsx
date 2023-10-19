@@ -47,8 +47,8 @@ const NavbarTabs = () => {
           <Link
             href={link.href}
             key={link.id}
-            className={`flex gap-2 items-center p-4 rounded-lg
-            hover:bg-lightRed hover:bg-opacity-20 hover:text-red
+            className={`flex gap-x-2 items-center px-2.5 py-[2px] rounded-lg
+            hover:bg-lightRed text-[16px] hover:bg-opacity-20 hover:text-red
               ${
                 selectedTab === link.id
                   ? "text-red bg-lightRed bg-opacity-20"
@@ -57,7 +57,7 @@ const NavbarTabs = () => {
             `}
             onClick={() => handleTabClick(link.id)}
           >
-            <Image src={link.src} alt={link.title} width={18} height={20} />
+            <Image src={link.src} alt={link.title} width={20} height={18} />
             {link.title}
           </Link>
         ))}

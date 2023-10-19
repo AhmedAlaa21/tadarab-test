@@ -11,7 +11,7 @@ const Skills: React.FC<SkillProps> = ({ skills }) => {
         {skills.map((skill) => (
           <span
             className="cursor-pointer bg-black bg-opacity-5 text-darkGray 
-              p-3 rounded-lg font-bold text-sm"
+              p-1.5 rounded-lg font-bold text-[12px]"
             key={skill}
           >
             {skill}

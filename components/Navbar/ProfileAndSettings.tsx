@@ -4,7 +4,7 @@ import ProfilePopup from "./ProfilePopup";
 
 const ProfileAndSettings = () => {
   return (
-    <div className="flex gap-6 items-center">
+    <div className="flex gap-x-6 items-center">
       <div
         className="cursor-pointer flex gap-2 py-2 px-3 rounded-full bg-lightYellow"
         title="نقاطك"

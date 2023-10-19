@@ -19,7 +19,7 @@ const LearningOutcomes: React.FC<LearningOutcomesProps> = ({
               width={15.63}
               height={12}
             />
-            <p className="text-base text-darkGray font-medium">{outcome}</p>
+            <p className="text-base text-darkGray font-normal">{outcome}</p>
           </li>
         ))}
       </ul>

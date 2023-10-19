@@ -4,7 +4,7 @@ import Link from "next/link";
 const Logo = () => {
   return (
     <Link href={"/"}>
-      <div className="flex gap-2 items-center">
+      <div className="flex gap-x-2 items-center">
         <Image
           priority
           src="/assets/images/mof-logo@3x.png"

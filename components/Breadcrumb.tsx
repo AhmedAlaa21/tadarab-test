@@ -3,8 +3,8 @@ import Image from "next/image";
 const Breadcrumb = () => {
   return (
     <div
-      className="sticky top-[9.92rem] bg-gray-700 bg-opacity-90 sm:top-[6.5rem] z-40 flex items-center gap-2 px-4 py-2 rounded-full"
-      style={{ position: "fixed" }}
+      className="bg-transparent z-40 flex items-center gap-2 rounded-full"
+      // style={{ position: "fixed" }}
     >
       <button className="text-lightGray">مسارتي</button>
       <Image

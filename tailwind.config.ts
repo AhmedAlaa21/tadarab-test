@@ -22,6 +22,9 @@ const config: Config = {
         lightYellow: "#FEF0CC",
         purple: "#7B2CBF",
       },
+      fontSize: {
+        heading: "20px",
+      },
     },
   },
   plugins: [],

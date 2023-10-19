@@ -13,7 +13,7 @@ const DevelopmentPath = () => {
   if (error) return <p>حدث خطأ في جلب البيانات .. حاول مرة أخرى</p>;
 
   return (
-    <div className="relative sm:max-w-6xl sm:mx-auto h-auto gap-4 w-full">
+    <div className="relative px-4 md:px-5 sm:max-w-6xl sm:mx-auto flex flex-col gap-4 h-auto mt-5 w-full">
       <Breadcrumb />
       {loading || !data ? (
         <div className="text-green text-3xl font-bold flex items-center justify-center self-center h-72">
@@ -21,7 +21,7 @@ const DevelopmentPath = () => {
         </div>
       ) : (
         <motion.div
-          className="mt-14 sm:p-8 p-4 flex flex-col w-full h-auto"
+          className=" flex flex-col w-full h-auto"
           animate={{
             x: 0,
             opacity: 1,

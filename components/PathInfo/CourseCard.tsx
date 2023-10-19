@@ -96,7 +96,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
         <div className="flex flex-col gap-1">
           <div
             className={`flex items-center justify-center text-xs text-center text-white
-            font-bold w-[90px] h-9 p-2 rounded-full
+            font-bold w-auto max-w-[90px] h-[24px] p-2 rounded-[12px]
             ${
               progress_percentage === 100
                 ? "bg-[#C15258]"
@@ -113,7 +113,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
             <p className="text-base text-normalGray">{progress_percentage}%</p>
           </div>
           <div className="flex justify-between gap-[6px] items-center max-w-[290px]">
-            <div className="flex gap-2 items-center">
+            <div className="flex gap-1.5 items-center">
               <Image
                 src={trainer_image}
                 width={22}
@@ -123,7 +123,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
               />
               <p className="text-sm text-lightGray font-bold">{trainer_name}</p>
             </div>
-            <div className="flex gap-2 items-center">
+            <div className="flex gap-1.5 items-center">
               <div className="w-[16px] h-[16px] bg-lightGray rounded-full text-white">
                 <Image
                   src="/assets/images/lessons.svg"
@@ -133,8 +133,11 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
                   className="rounded-full"
                 />
               </div>
-              <p className="text-sm text-lightGray font-bold">
-                {number_of_lessons} <span className="font-normal">درس</span>
+              <p className="text-sm text-lightGray">
+                <span className="font-bold inline-block ml-1">
+                  {number_of_lessons}
+                </span>
+                <span className="font-normal">درس</span>
               </p>
             </div>
             <div className="flex gap-1 items-center">
