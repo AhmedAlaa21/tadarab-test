@@ -40,12 +40,12 @@ const Hero: React.FC<HeroProps> = ({ title, image, courses }) => {
               width={16}
               height={16}
             />
-            <span className="text-base font-normal">
+            <p className="text-base ">
               <span className="font-bold inline-block ml-1">
                 {courses.length}
               </span>
-              دورات تدريبية
-            </span>
+              <span className="font-normal text-sm">دورات تدريبية</span>
+            </p>
           </div>
           <div className="flex gap-1">
             <Image
@@ -56,9 +56,9 @@ const Hero: React.FC<HeroProps> = ({ title, image, courses }) => {
             />
             <p className="text-base">
               <span className="font-bold">{`${arabicHours}`}</span>
-              <span className=" font-normal">س</span> :{" "}
+              <span className=" font-normal text-sm">س</span> :{" "}
               <span className="font-bold">{`${arabicMinutes}`}</span>
-              <span className="font-normal">د</span>
+              <span className="font-normal text-sm">د</span>
             </p>
           </div>
         </div>
